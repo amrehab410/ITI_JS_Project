@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/eca282458d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="snackbar"></div>
+    <div id="header">
+      <div id="leftHeader">
+        <a href="./index.html"
+          ><img
+            style="width: 100px; height: 100px"
+            id="homelogo"
+            src="./assets/homelogo.png"
+            alt=""
+        /></a>
+      </div>
+      <div id="middleHeader">
+        <div id="navBtns">
+          <a class="navBtn" id="homeBtn" href="index.html">Home</a>
+          <a class="navBtn" id="aboutBtn" href="aboutUs.html">About Us</a>
+          <a class="navBtn" id="contactBtn" href="contactUs.html">Contact Us</a>
+        </div>
+      </div>
+      <div id="rightHeader">
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="What are you looking for?" />
+        <i id="searchBtn" class="fa fa-search fa-2x"></i>
+
+        <a href="./cart.html"
+          ><i class="fa-solid fa-cart-shopping cart fa-2x" style="color: #ffffff"></i
+        ></a>
+      </div>
+    </div>
+
+    <div id="formDiv">
+      <div id="form">
+        <h1>Let us know how to help you!</h1>
+        <form id="contactForm" onsubmit="validateForm(event)">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <span id="nameError" class="error"></span>
+          </div>
+          <br />
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span id="emailError" class="error"></span>
+          </div>
+          <br />
+          <div>
+            <label for="message">Notes:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span id="messageError" class="error"></span>
+          </div>
+          <div>
+            <br />
+            <input id="submit" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+
+      <img src="./assets/contact-us.png" id="cntImg" alt="" />
+    </div>
+    <div id="footer">
+      <div id="info">
+        <span>Phone: +200546261916</span>
+        <span>Email: support@myecommerce.com</span>
+        <div id="social">
+          <i class="social fa-brands fa-facebook fa-2x"></i>
+          <i class="social fa-brands fa-instagram fa-2x"></i>
+        </div>
+      </div>
+      <div id="footerHyper">
+        <a class="footerNav" id="footerCU" href="./contactUs.html">Contact Us</a>
+
+        <a class="footerNav" id="footerAU" href="./aboutUs.html">About Us</a>
+      </div>
+    </div>
+    <button class="back-to-top" id="backToTopButton">
+      <i class="fa-solid fa-angle-up" style="color: #233047"></i>
+    </button>
+    <script src="contactUs.js"></script>
+  </body>
+</html>

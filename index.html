@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/eca282458d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="leftHeader">
+        <a href="./index.html"
+          ><img
+            style="width: 100px; height: 100px"
+            id="homelogo"
+            src="./assets/homelogo.png"
+            alt=""
+        /></a>
+      </div>
+      <div id="middleHeader">
+        <div id="navBtns">
+          <a class="navBtn" id="homeBtn" href="index.html">Home</a>
+          <a class="navBtn" id="aboutBtn" href="aboutUs.html">About Us</a>
+          <a class="navBtn" id="contactBtn" href="contactUs.html">Contact Us</a>
+        </div>
+      </div>
+      <div id="rightHeader">
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="What are you looking for?" />
+        <i id="searchBtn" class="fa fa-search fa-2x"></i>
+        <a href="./cart.html"
+          ><i class="fa-solid fa-cart-shopping cart fa-2x" style="color: #ffffff"></i
+        ></a>
+      </div>
+    </div>
+    <div
+      style="display: flex; flex-direction: column; align-items: center; background-color: orange">
+      <h2>Check our latest collections!</h2>
+    </div>
+
+    <div id="slider">
+      <i id="prevBtn" class="buttons sliders fa-solid fa-arrow-left fa-3x"></i>
+      <div id="imageContainer"><img id="bigImg" src="./sliderAssets/1.jpg" alt="" /></div>
+
+      <i id="nextBtn" class="buttons sliders fa-solid fa-arrow-right fa-3x"></i>
+    </div>
+    <div
+      style="display: flex; flex-direction: column; align-items: center; background-color: orange">
+      <h2>Products</h2>
+    </div>
+    <div id="productContainer">
+      <div id="filter">
+        <h3>Filter</h3>
+        <br />
+        <div>
+          <label for="price">Price</label>
+          <input type="range" name="" id="price" min="0" max="1000" step="20" value="1000" />
+          <span id="priceValue">1000$</span>
+        </div>
+        <br />
+        <h3>Categories</h3>
+        <div id="catBtns">
+          <button class="catBtns">All</button>
+          <button class="catBtns">Shirts</button>
+          <button class="catBtns">Pants</button>
+          <button class="catBtns">Shoes</button>
+        </div>
+      </div>
+
+      <div id="products">
+        <div class="products" id="p1">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+        <div class="products" id="p2">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+        <div class="products" id="p3">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+
+        <div class="products" id="p4">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+        <div class="products" id="p5">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+        <div class="products" id="p6">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+
+        <div class="products" id="p7">
+          <img class="miniProducts" src="" alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+        <div class="products" id="p8">
+          <img class="miniProducts" src="." alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+        <div class="products" id="p9">
+          <img class="miniProducts" src="." alt="" />
+          <p></p>
+          <button class="cartBtn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <button class="back-to-top" id="backToTopButton">
+      <i class="fa-solid fa-angle-up" style="color: #233047"></i>
+    </button>
+    <div id="footer">
+      <!-- <div id="footerLinks"> -->
+      <div id="info">
+        <span>Phone: +200546261916</span>
+        <span>Email: support@myecommerce.com</span>
+        <div id="social">
+          <i class="social fa-brands fa-facebook fa-2x"></i>
+          <i class="social fa-brands fa-instagram fa-2x"></i>
+        </div>
+      </div>
+      <div id="footerHyper">
+        <a class="footerNav" id="footerCU" href="./contactUs.html">Contact Us</a>
+
+        <a class="footerNav" id="footerAU" href="./aboutUs.html">About Us</a>
+      </div>
+    </div>
+    <div id="snackbar"></div>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="classes.js"></script>
+  </body>
+</html>
